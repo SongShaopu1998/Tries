@@ -19,6 +19,7 @@ void CompressedTrie::clear(TrieNode* node) {
             clear(node->children[i]);
         }
         delete node;
+        node = nullptr;
     }
 }
 
